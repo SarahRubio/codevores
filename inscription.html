@@ -10,86 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   </head>
 
-  <body class="themeJour">
+  <body class="themeJour bgConnexion">
 
-    <header>
-
-      <div class="column">
-
-          <div class="buttons">
-
-
-            <div class="column2">
-
-              <h1><a href="index.html">Codevores</a></h1>
-
-              <div class="hamburger-menu hidden">
-                <button type="button" name="button" class="cross close" style="display:none;"><i class="fas fa-times"></i></button>
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="inscription.html">Inscription</a></li>
-                  <li><a href="connexion.html">Connexion</a></li>
-                  <li><a href="espace-recruteur.html">Espace recruteur</a></li>
-                  <li><a href="espace-professionnel.html">Espace professionnel</a></li>
-                  <li><a href="communaute.html">La communauté</a></li>
-                  <li><a href="actualites.html">Les actualités</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </div>
-            </div>
-
-              <!-- <div class="themes">
-                <button type="button" name="button" class="jour">🌞</button>
-                <button type="button" name="button" class="nuit">🌚</button>
-              </div> -->
-
-              <div class="identite">
-                <button type="button" class="hamburger"><i class="fas fa-bars"></i></button>
-                <button type="button" name="button" class="connexion"><a href="connexion.html">Connexion</a></button>
-                <button type="button" name="button" class="inscription"><a href="inscription.html">Inscription</a></button>
-              </div>
+          <div class="row">
+                  <h1><a href="index.html">Codevores</a></h1>
+                  <button type="button" name="button" class="accueil"><a href="index.html">Retour au site</a></button>
           </div>
 
-          <h2>INSCRIPTION</h2>
+          <div class="formulaireConnexion">
+            <h2>INSCRIPTION</h2>
+                <label for="surname">Prénom*</label>
+                <input type="text" name="" value="" placeholder="prenom" id="surname">
+                <label for="name">Nom*</label>
+                <input type="text" name="" value="" placeholder="nom" id="name">
+                <label for="mail">E-mail*</label>
+                <input type="email" name="" value="" placeholder="exemple@mail.com" id="mail">
+                <label for="password">Mot de passe*</label>
+                <input type="text" name="" value="" placeholder="Saisissez votre mot de passe" id="password">
+                <button type="button" name="button" class="seConnecter">Je m'inscris</button>
+                <p class="pasinscrit">Vous êtes déjà inscrit? <button type="button" name="button" class="sinscrire"><a href="connexion.html"> > Connectez-vous</a></button></p>
 
-      </div>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="espace-recruteur.html">Espace recruteur</a></li>
-            <li><a href="espace-professionnel.html">Espace professionnel</a></li>
-            <li><a href="communaute.html">La communauté</a></li>
-            <li><a href="actualites.html">Les actualités</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </nav>
-
-    </header>
-
-    <main>
-
-      <div class="presentation">
-        <h2>Créer mon compte sur Codevores</h2>
-        <div class="already">
-          <p>Déjà inscrit sur Codevores?</p>
-          <button type="button" name="button" class="connectez">Connectez-vous</button>
-        </div>
-
-        <div class="formular">
-            <label for=""><input type="text" name="" value="" placeholder="prenom"></label>
-            <label for=""><input type="text" name="" value="" placeholder="nom"></label>
-            <label for=""><input type="text" name="" value="" placeholder="adresse e-mail"></label>
-            <label for=""><input type="text" name="" value="" placeholder="mot de passe"></label>
-        </div>
-
-      </div>
-
-    </main>
-
-
+          </div>
 
   <script src="assets/javascript/script.js"></script>
   </body>

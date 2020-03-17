@@ -243,6 +243,7 @@ main
 	border: #E8E8E8 solid 1px;
 	border-radius: 10px;
 	margin: 0 29vw 5vh 29vw;
+	padding-bottom: 5vh;
 }
 
 .formulaireConnexion h2
@@ -264,7 +265,7 @@ main
 .formulaireConnexion input
 {
 	text-align: left;
-	margin: 4vh 5vw;
+	margin: 2vh 5vw;
 	padding: 2vh 1vw;
 	font-size: 1em;
 	border-radius: 10px;
@@ -290,6 +291,27 @@ main
 .accueil:hover
 {
 	border: #122790 .2em solid;
+}
+
+.pasinscrit
+{
+	color: #E8E8E8;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.sinscrire
+{
+	background-color: inherit;
+	border: none;
+}
+
+.sinscrire a
+{
+	text-decoration: none;
+	color: #E8E8E8;
+	cursor: pointer;
+	font-size: 1.2em;
 }
 
 /****************************************************** THEMES ***********************************/
@@ -427,7 +449,7 @@ main
 
 	.formulaireConnexion
 	{
-		margin: 5vh 16vw;
+		margin: 0 8vw 5vh 8vw;
 		padding: 0 0 9vh 0;
 	}
 
@@ -444,14 +466,14 @@ main
 
 	.formulaireConnexion input
 	 {
-    margin: 3vh 5vw;
-    padding: 1vh 1vw;
+    margin: 4vh 5vw;
+    padding: 1.5vh 1vw;
     font-size: 0.8em;
 	}
 
 	.seConnecter
 	{
-    margin: 5vh 15vw 0 15vw;
+    margin: 5vh 15vw 5vh 15vw;
     padding: 1vh 0;
 	}
 }
