@@ -179,6 +179,141 @@ nav a
 	font-size: 1.2rem;
 }
 
+
+/***************************************************** MAIN ************************************/
+main
+{
+	margin: 10vh 10vw;
+}
+
+.presentation
+{
+	height: 87vh;
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.presentation h2
+{
+	color: #122790;
+	font-size: 2.5rem;
+	text-align: left;
+}
+
+/******************************************************CONNEXION **********************************/
+.bgConnexion
+{
+	  background-image: url('../images/ink.jpg');
+	  background-size: auto;
+	  height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+}
+
+.row
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 6vh 5vw 0 5vw;
+}
+
+.accueil
+{
+	padding: 2vh 1.2vw;
+	border: #E8E8E8 .1em solid;
+	border-radius: 0.4em;
+	background-color: inherit;
+	color: #E8E8E8;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.row a
+{
+  color: #E8E8E8;
+  text-decoration: none;
+}
+
+.formulaireConnexion
+{
+	display: flex;
+	flex-direction: column;
+	border: #E8E8E8 solid 1px;
+	border-radius: 10px;
+	margin: 0 29vw 5vh 29vw;
+}
+
+.formulaireConnexion h2
+{
+	margin: 8vh 0;
+	font-size: 2.5rem;
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.formulaireConnexion label
+{
+	color: #E8E8E8;
+	text-align: left;
+	padding-left: 5vw;
+	font-size: 1.3em;
+}
+
+.formulaireConnexion input
+{
+	text-align: left;
+	margin: 4vh 5vw;
+	padding: 2vh 1vw;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+.seConnecter
+{
+	font-size: 1em;
+	border-radius: 10px;
+	background-color: inherit;
+	margin: 7vh 15vw;
+	padding: 2vh 0vw;
+	color: #E8E8E8;
+	cursor: pointer;
+}
+
+.seConnecter:hover
+{
+	border: .2em solid;
+	border-radius: 0.4em;
+}
+
+/****************************************************** THEMES ***********************************/
+
+.themeJour
+{
+  transition: color 2s, background-color 2s;
+}
+
+.themeNuit
+{
+  transition: color 2s, background-color 2s;
+}
+
+.themeJour header
+{
+  background-image: url('../images/ink.jpg');
+  background-position: unset;
+}
+
+
+.themeNuit header
+{
+  background-image: url('../images/ink.jpg');
+  background-position: left;
+}
+
+/***************************************************** MEDIA QUERIES *************************************/
+
 @media (min-width: 1200px)
 {
 	.hamburger
@@ -273,48 +408,45 @@ nav a
 	{
 		font-size: 1.5rem;
 	}
-}
 
-/***************************************************** MAIN ************************************/
-main
-{
-	margin: 10vh 10vw;
-}
-.presentation
-{
-	height: 87vh;
-  display: flex;
-	flex-wrap: wrap;
-}
+	.row
+	{
+		margin: 4vh 2vw 0 2vw;
+	}
 
-.presentation h2
-{
-	color: #122790;
-	font-size: 2.5rem;
-	text-align: left;
-}
+	.accueil
+	{
+		font-size: 0.8rem;
+		padding: 1vh 2vw;
+	}
 
-/****************************************************** THEMES ***********************************/
+	.formulaireConnexion
+	{
+		margin: 5vh 16vw;
+		padding: 0 0 9vh 0;
+	}
 
-.themeJour
-{
-  transition: color 2s, background-color 2s;
-}
+	.formulaireConnexion h2
+	{
+		margin: 5vh 0;
+    font-size: 2em;
+	}
 
-.themeNuit
-{
-  transition: color 2s, background-color 2s;
-}
+	.formulaireConnexion label
+	{
+    font-size: 1.1em;
+	}
 
-.themeJour header
-{
-  background-image: url('../images/ink.jpg');
-  background-position: unset;
-}
+	.formulaireConnexion input
+	 {
+    margin: 3vh 5vw;
+    padding: 1vh 1vw;
+    font-size: 0.8em;
+	}
 
-
-.themeNuit header
-{
-  background-image: url('../images/ink.jpg');
-  background-position: left;
+	.seConnecter
+	{
+    margin: 5vh 15vw 0 15vw;
+    padding: 1vh 0;
+	}
 }
