@@ -120,6 +120,12 @@ header
 	padding: 1.2vh 1.2vw;
 }
 
+.connexion:hover, .inscription:hover
+{
+	border: #122790 .2em solid;
+	border-radius: 0.4em;
+}
+
 .hamburger-menu
 {
 	display: flex;
@@ -185,10 +191,20 @@ nav a
 		display: none;
 	}
 
+	.hamburger-menu
+	{
+		display: none;
+	}
+
 	.hamburger-menu ul
 	{
 		display: none;
 	}
+
+	.connexion, .inscription
+		{
+	    display: inline;
+	  }
 }
 
 @media (max-width: 1200px)
@@ -207,6 +223,18 @@ nav a
 		cursor: pointer;
 	}
 
+	.hamburger:hover
+	{
+		border: #122790 .2em solid;
+		border-radius: 0.1em;
+	}
+
+	.cross:hover
+	{
+		color: #122790;
+		font-size: 2rem;
+	}
+
 	.hamburger-menu ul
 	{
 		display: inline-flex;
@@ -216,6 +244,11 @@ nav a
 	.hamburger-menu li
 	{
 		padding: 1vh;
+	}
+
+	.hamburger-menu li:hover
+	{
+		font-size: 2rem;
 	}
 
 	nav
