@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body
+{
+    font-family: 'Baloo 2', cursive;
+}
+
+h1
+{
+  font-family: 'Codystar', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #E8E8E8;
+  font-weight: bolder;
+	padding-bottom: 5vh;
+}
+
+h2
+{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.column
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 45vh;
+}
+
+.buttons
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 6vh 6vw;
+}
+
+.buttons a
+{
+  color: #E8E8E8;
+  text-decoration: none;
+}
+
+header
+{
+  background-image: url('../images/ink.jpg');
+  background-size: cover;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jour, .nuit
+{
+  background-color: inherit;
+  font-size: 2em;
+  cursor: pointer;
+  border: none;
+}
+
+.connexion, .inscription
+{
+	margin-right: 4vw;
+	border: #E8E8E8 .1em solid;
+	border-radius: 0.4em;
+  background-color: inherit;
+  color: #E8E8E8;
+  font-size: 1rem;
+  cursor: pointer;
+	padding: 1.2vh 1.2vw;
+}
+
+.hamburger-menu
+{
+	display: flex;
+	flex-direction: column;
+	border: .1rem solid #E8E8E8;
+	border-radius: 1rem;
+	padding: 3vh 12vw;
+}
+
+.hamburger, .hidden
+{
+	display: none;
+}
+
+.close
+{
+	font-size: 1rem;
+	background-color: inherit;
+	color: #E8E8E8;
+	cursor: pointer;
+	margin-bottom: 1vh;
+	display: inline-block;
+	padding: 0 1vw;
+	border: none;
+	text-align: right;
+}
+
+
+nav li
+{
+  cursor: pointer;
+  list-style: none;
+}
+
+ul
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav
+{
+  border-top: solid 1px #E8E8E8;
+  padding: 3vh 6vw;
+}
+
+nav a
+{
+  color: #E8E8E8;
+  text-decoration: none;
+	font-size: 1.2rem;
+}
+
+@media (min-width: 1200px)
+{
+	.hamburger
+	{
+		display: none;
+	}
+
+	.cross
+	{
+		display: none;
+	}
+
+	.hamburger-menu ul
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 1200px)
+{
+  .connexion, .inscription
+		{
+	    display: none;
+	  }
+
+	.hamburger
+	{
+		display: inline-flex;
+		font-size: 1.5rem;
+		background-color: inherit;
+		color: #E8E8E8;
+		cursor: pointer;
+	}
+
+	.hamburger-menu ul
+	{
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	.hamburger-menu li
+	{
+		padding: 1vh;
+	}
+
+	nav
+	{
+		display: none
+	}
+
+	.column
+	{
+		height: 80vh;
+	}
+
+	.column2
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	h2
+	{
+		font-size: 1.5rem;
+	}
+}
+
+/***************************************************** MAIN ************************************/
+main
+{
+	margin: 10vh 10vw;
+}
+.presentation
+{
+	height: 87vh;
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.presentation h2
+{
+	color: #122790;
+	font-size: 2.5rem;
+	text-align: left;
+}
+
+/****************************************************** THEMES ***********************************/
+
+.themeJour
+{
+  transition: color 2s, background-color 2s;
+}
+
+.themeNuit
+{
+  transition: color 2s, background-color 2s;
+}
+
+.themeJour header
+{
+  background-image: url('../images/ink.jpg');
+  background-position: unset;
+}
+
+
+.themeNuit header
+{
+  background-image: url('../images/ink.jpg');
+  background-position: left;
+}
