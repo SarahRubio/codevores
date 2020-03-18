@@ -158,6 +158,7 @@ nav li
 {
   cursor: pointer;
   list-style: none;
+	position: relative;
 }
 
 ul
@@ -177,9 +178,26 @@ nav a
   color: #E8E8E8;
   text-decoration: none;
 	font-size: 1.2rem;
+	margin-bottom: 10px;
 }
 
+li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #E8E8E8;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out;
+}
 
+li:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 /***************************************************** MAIN ************************************/
 main
 {
@@ -314,6 +332,78 @@ main
 	font-size: 1.2em;
 }
 
+.square-mini
+{
+	display: flex;
+	justify-content: center;
+	font-size: 0.8em;
+	color: #E8E8E8;
+}
+
+.square-mini p
+{
+	padding: 0 2vw;
+}
+
+.box-inscription
+{
+	display: flex;
+	flex-direction: column;
+	color: #E8E8E8;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-inscription h2
+{
+	margin: 8vh 0 0 0;
+	font-size: 2.5em;
+}
+
+.box-inscription p
+{
+	font-size: 0.8em;
+	margin-bottom: 5vh;
+}
+
+.check
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.check p
+{
+	color: #E8E8E8;
+	padding: 0 0 1vh 5vw;
+	font-size: 1.2em;
+}
+
+.boxing
+{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 3vh;
+}
+
+.boxing input
+{
+	font-size: 1.2em;
+	margin: 2vh 0 2vh 7vw;
+}
+
+.boxing label
+{
+	font-size: 1.2em;
+	margin: 2vh 5vw 2vh 0;
+	padding-left: 1vw;
+}
+
+.check-box
+{
+	display: flex;
+	align-items: center;
+}
 /****************************************************** THEMES ***********************************/
 
 .themeJour
@@ -466,7 +556,7 @@ main
 
 	.formulaireConnexion input
 	 {
-    margin: 4vh 5vw;
+    margin: 2vh 5vw;
     padding: 1.5vh 1vw;
     font-size: 0.8em;
 	}
@@ -475,5 +565,15 @@ main
 	{
     margin: 5vh 15vw 5vh 15vw;
     padding: 1vh 0;
+	}
+
+	.box-inscription h2
+	{
+    margin: 8vh 0 0 0;
+	}
+
+	.check-box input
+	{
+		margin: 2vh 5vw;
 	}
 }
