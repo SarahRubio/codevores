@@ -15,45 +15,49 @@
 
 // Menu hamburger et cross :
 
-// document.querySelector(".hamburger").addEventListener('click', function ()
-// {
-//   document.querySelector('.hamburger-menu').classList.remove('hidden');
-//   document.querySelector('.hamburger').style.display="none";
-//   document.querySelector('.cross').style.display="inline";
-// });
-//
-//
-// document.querySelector(".cross").addEventListener('click', function ()
-// {
-//   document.querySelector('.hamburger-menu').classList.add('hidden');
-//   document.querySelector('.hamburger').style.display="inline";
-//   document.querySelector('.cross').style.display="none";
-// });
+if(document.querySelector('.hamburger')) {
+    document.querySelector(".hamburger").addEventListener('click', function ()
+    {
+      document.querySelector('.hamburger-menu').classList.remove('hidden');
+      document.querySelector('.hamburger').style.display="none";
+      document.querySelector('.cross').style.display="inline";
+    });
+};
+
+if(document.querySelector('.cross')) {
+    document.querySelector(".cross").addEventListener('click', function ()
+    {
+      document.querySelector('.hamburger-menu').classList.add('hidden');
+      document.querySelector('.hamburger').style.display="inline";
+      document.querySelector('.cross').style.display="none";
+    });
+};
 
 // JSON geekzone
 
 
 function afficheArticle(article) {
+    let element = document.createElement("li");
+    let lien = document.createElement("a");
+    lien.href = article.url
+    lien.textContent = "> " + "  " + article.title
 
-  let element = document.createElement("li")
-
-  let lien = document.createElement("a")
-  lien.href = article.url
-  lien.textContent = "> " + "  " + article.title
-
-  element.appendChild(lien)
-  return element
+    element.appendChild(lien)
+    return element
 }
 
 let liste = document.createElement("ul")
 
-for(let i = 0; i < 10; i++) {
-  article = afficheArticle(data.items[i])
-  liste.appendChild(article)
-}
+if(document.querySelector('.actuJson')) {
+  for(let i = 0; i < 10; i++) {
+    article = afficheArticle(data.items[i])
+    liste.appendChild(article)
+  }
+};
 
-document.querySelector(".actuJson").appendChild(liste)
-
+if(document.querySelector('.actuJson')) {
+  document.querySelector(".actuJson").appendChild(liste)
+};
 
 
 // Input-file.
@@ -61,7 +65,9 @@ document.querySelector(".actuJson").appendChild(liste)
 let input = document.querySelector('#file-up');
 let preview = document.querySelector('.preview');
 
-input.addEventListener('change', updateFileDisplay);
+if(document.querySelector('.label-file')) {
+  input.addEventListener('change', updateFileDisplay);
+};
 
 function updateFileDisplay() {
   while(preview.firstChild) {
