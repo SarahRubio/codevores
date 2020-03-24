@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Codevores - Contact</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+2|Codystar&display=swap" rel="stylesheet">
@@ -10,75 +11,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   </head>
 
-  <body class="themeJour">
+  <body class="themeJour bgConnexion">
 
-    <header>
-
-      <div class="column">
-
-          <div class="buttons">
-
-
-            <div class="column2">
-
-              <h1><a href="index.html">Codevores</a></h1>
-
-              <div class="hamburger-menu hidden">
-                <button type="button" name="button" class="cross close" style="display:none;"><i class="fas fa-times"></i></button>
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="inscription.html">Inscription</a></li>
-                  <li><a href="connexion.html">Connexion</a></li>
-                  <li><a href="espace-recruteur.html">Espace recruteur</a></li>
-                  <li><a href="espace-professionnel.html">Espace professionnel</a></li>
-                  <li><a href="communaute.html">La communauté</a></li>
-                  <li><a href="actualites.html">Les actualités</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </div>
-            </div>
-
-              <!-- <div class="themes">
-                <button type="button" name="button" class="jour">🌞</button>
-                <button type="button" name="button" class="nuit">🌚</button>
-              </div> -->
-
-              <div class="identite">
-                <button type="button" class="hamburger"><i class="fas fa-bars"></i></button>
-                <button type="button" name="button" class="connexion"><a href="connexion.html">Connexion</a></button>
-                <button type="button" name="button" class="inscription"><a href="inscription.html">Inscription</a></button>
-              </div>
+          <div class="row">
+                  <h1><a href="index.html">Codevores</a></h1>
+                  <button type="button" name="button" class="accueil"><a href="index.html">Retour au site</a></button>
           </div>
 
-          <h2>CONTACT</h2>
+          <div class="formulaireConnexion">
+                <div class="box-contact">
+                  <h2>CONTACTEZ-NOUS</h2>
+                  <p>Compléter le formulaire pour nous contacter.</p>
+                  <p class="marginb">* champ obligatoire</p>
+                </div>
 
-      </div>
+                <div class="form_content">
+                  <form class="" action="index.html" method="post">
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="espace-recruteur.html">Espace recruteur</a></li>
-            <li><a href="espace-professionnel.html">Espace professionnel</a></li>
-            <li><a href="communaute.html">La communauté</a></li>
-            <li><a href="actualites.html">Les actualités</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </nav>
+                      <!-- <div class="champ">
+                        <label for="" class="labelC">Quel service souhaitez-vous contacter?</label>
+                        <select class="" name="">
+                            <option value="">Service commercial</option>
+                            <option value="">Service technique</option>
+                            <option value="">Service réclamations</option>
+                        </select>
+                      </div> -->
 
-    </header>
+                      <div class=" champ check">
+                          <p>Quel service souhaitez-vous contacter?</p>
+                          <div class="boxing">
+                                <div class="check-box">
+                                  <input type="checkbox" name="" value="" id="serviceCommercial"><label for="serviceCommercial">Service commercial</label>
+                                </div>
+                                <div class="check-box">
+                                  <input type="checkbox" name="" value="" id="serviceTechnique"><label for="serviceTechnique">Service technique</label>
+                                </div>
+                                <div class="check-box">
+                                  <input type="checkbox" name="" value="" id="serviceReclamations"><label for="serviceReclamations">Service réclamations</label>
+                                </div>
+                          </div>
+                      </div>
 
-    <main>
+                      <div class="champ">
+                        <label for="nom" class="labelC">Nom* :</label>
+                        <input type="text" name="" value="" id="nom" placeholder="Nom" class="inputC">
+                      </div>
 
-      <div class="presentation">
-        <h2>CONTACTEZ-NOUS</h2>
-        <p>Formulaire de contact pour répondre aux questions de nos utilisateurs. Nous avons 3 pôles qui peuvent recevoir ces emails : commercial, Techniques et Réclamations. Cela veut dire que l'utilisateur  doit choisir avec qui il/elle souhaite prendre contact.</p>
-        <p>Utiliser Javascript et l'API de Mandrill pour réellement envoyer l'email à votre propre adresse mail.</p>
-      </div>
-    </main>
+                      <div class="champ">
+                        <label for="prenom" class="labelC">Prénom* :</label>
+                        <input type="text" name="" value="" id="prenom" placeholder="Prénom" class="inputC">
+                      </div>
 
+                      <div class="champ">
+                        <label for="mail" class="labelC">E-mail* :</label>
+                        <input type="email" name="" value="" id="mail" placeholder="Exemple@mail.com" class="inputC">
+                      </div>
 
+                      <div class="champ">
+                        <label for="object" class="labelC">Objet de votre demande: </label>
+                        <textarea name="name" rows="1" cols="20" id="object" placeholder="Objet de votre message"></textarea>
+                      </div>
+
+                      <div class="champ">
+                        <textarea name="name" rows="10" cols="5" id="comments" placeholder="Votre message"></textarea>
+                      </div>
+
+                      <div class="champ">
+                        <label for="file-up" class="label-file">Joindre un document</label>
+                        <input type="file" name="" value="" id="file-up" class="input-file">
+                        <p class="preview">Aucun fichier sélectionné pour le moment.</p>
+                      </div>
+
+                      <div class="row-center">
+                        <input type="submit" name="" value="Envoyer" class="envoyer">
+                      </div>
+
+                  </form>
+                </div>
+          </div>
 
   <script src="assets/javascript/script.js"></script>
   </body>
