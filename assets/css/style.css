@@ -154,7 +154,7 @@ header
 	padding: 										1.2vh 1.2vw;
 }
 
-.connexion:hover, .inscription:hover
+.connexion:hover, .inscription:hover, .connexion:active, .inscription:active
 {
 	border: 										#750202 .2em solid;
 }
@@ -189,14 +189,15 @@ header
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 
 .searchbar
 {
-	margin: 3vh 27vw;
-	padding: 2.5vh 1vw;
+	margin: 3vh 0;
+	padding: 2vh 1vw;
 	font-size: 1em;
+	width: 30vw;
 }
 
 nav li
@@ -258,7 +259,7 @@ main
 
 .presentation h2
 {
-	color: 											#122790;
+	color: 											#22211f94;
 	font-size: 									2.5rem;
 	text-align: 								left;
 }
@@ -349,12 +350,12 @@ main
 	cursor: 										pointer;
 }
 
-.seConnecter:hover
+.seConnecter:hover, .seConnecter:active
 {
 	border: 										.2em solid;
 }
 
-.accueil:hover
+.accueil:hover, .accueil:active
 {
 	border: 										#750202 .2em solid;
 }
@@ -501,7 +502,7 @@ main
 .long-square h2
 {
 	font-size: 									2.5em;
-	color: 											#122790;
+	color: 											#22211f94;
 	text-align: 								center;
 	line-height: 								6vh;
 	letter-spacing: 						0.2vw;
@@ -515,7 +516,7 @@ main
 	align-content: 							space-around;
 	align-items: 								flex-start;
 	padding: 										5vh 5vw;
-	border: 										1px solid #122790;
+	border: 										1px solid #22211f94;
 	margin: 										0 0 0 0;
 	width: 											30vw;
 }
@@ -523,7 +524,7 @@ main
 .boxL h3, .boxR h3
 {
 	font-size: 									2.5em;
-	color: 											#122790;
+	color: 											#22211f94;
 	text-align: 								center;
 	line-height: 								6vh;
 	letter-spacing: 						0.2vw;
@@ -538,7 +539,7 @@ main
 	align-content: 							space-around;
 	align-items: 								flex-end;
 	padding: 										5vh 5vw;
-	border: 										1px solid #122790;
+	border: 										1px solid #22211f94;
 	margin: 										0 0 0 0;
 	width: 											30vw;
 }
@@ -591,7 +592,7 @@ justify-content: 							center;
 	cursor: 										pointer;
 }
 
-.envoyer:hover
+.envoyer:hover, .envoyer:active
 {
 	border: 										solid 4px #750202;
 }
@@ -629,7 +630,7 @@ select
 	text-align: 								center;
 }
 
-.label-file:hover
+.label-file:hover, .label-file:active
 {
 	border: 										solid 4px #750202;
 }
@@ -658,7 +659,7 @@ select
 {
 	margin: 										0 5vw;
 	padding: 										5vh 5vw 7vh 5vw;
-	color: 											#122790;
+	color: 											#22211f94;
 	font-size: 									2rem;
 	text-align: 								center;
 }
@@ -677,7 +678,7 @@ select
 
 .typeActu h4
 {
-	color: 											#122790;
+	color: 											#22211f94;
 	font-size: 									1.3rem;
 	text-align: 								center;
 }
@@ -685,7 +686,7 @@ select
 .typeActu a
 {
 	text-decoration: 						none;
-	color: 											#122790;
+	color: 											#22211f94;
 }
 
 .yellow
@@ -707,20 +708,20 @@ select
 
 .actuGeekzone
 {
-	background-color: 					#b9c7ff26;
+	background-color: 					#ffdcb926;
 	padding: 										5vh 5vw;
 }
 
 .actuGeekzone a
 {
 	text-decoration: 						none;
-	color: 											#122790;
+	color: 											#22211f94;
 	text-align: 								left;
 }
 
 .actuGeekzone h3, .actuInscription h3, .actuJournee h3
 {
-	color: 											#122790;
+	color: 											#22211f94;
 	font-size: 									1.7em;
 	text-align: 								left;
 	padding: 										5vh 0;
@@ -750,7 +751,7 @@ padding: 											0.3vh 0;
 {
 	text-decoration: 						none;
 	font-size: 									1.3em;
-	color: 											#122790;
+	color: 											#22211f94;
 	position: 									relative;
 	display: 										inline-block;
 	padding: 										2vh 0;
@@ -764,7 +765,7 @@ padding: 											0.3vh 0;
   height: 										2px;
   bottom: 										0;
   left: 											0;
-  background-color: 					#122790;
+  background-color: 					#22211f94;
   visibility: 								hidden;
   transform: 									scaleX(0);
   transition: 								all .3s ease-in-out;
@@ -783,8 +784,50 @@ padding: 											0.3vh 0;
 
 .actuJournee
 {
-	background-color: 					#b9c7ff26;
+	background-color: 					#22211f94;
 	padding: 										5vh 5vw;
+}
+
+.trombi
+{
+	display: 										flex;
+	justify-content: 						space-around;
+	flex-wrap: 									wrap;
+}
+
+.card
+{
+	position: 									relative;
+	height:											314px;
+}
+
+.imgTrombi
+{
+	position: 									absolute;
+	z-index: 										1;
+}
+
+.textTrombi
+{
+	position: 									absolute;
+	z-index: 										2;
+	top: 												228px;
+	left: 											32px;
+	height:											314px;
+	font-size: 									2em;
+	color: 											#fff;
+}
+
+
+.textTrombi2
+{
+ position: 									absolute;
+ z-index: 										2;
+ top: 												269px;
+ left: 												33px;
+ height:											314px;
+ font-size: 									2em;
+ color: 											#fff;
 }
 
 /****************** Footer  */
@@ -891,7 +934,7 @@ padding: 											0.3vh 0;
 
 /***************************************************** MEDIA QUERIES *************************************/
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1200px)
 {
 	.hamburger
 	{
@@ -919,15 +962,13 @@ padding: 											0.3vh 0;
 	  }
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1200px)
 {
 
 	.searchbar
-
 	{
-	    margin: 2vh 10vw;
-	    padding: 1.5vh 1vw;
-	    font-size: 1em;
+		width: 84vw;
+		font-size: 0.7em;
 	}
 
   .connexion, .inscription
@@ -944,14 +985,14 @@ padding: 											0.3vh 0;
 		cursor: 									pointer;
 	}
 
-	.hamburger:hover
+	.hamburger:hover, .hamburger:active
 	{
 		border: 									#750202 .2em solid;
 	}
 
-	.cross:hover
+	.cross:hover, .cross:active
 	{
-		color: 										#122790;
+		color: 										#22211f94;
 		font-size: 								2rem;
 	}
 
