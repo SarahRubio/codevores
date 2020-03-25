@@ -997,6 +997,71 @@ padding: 											0.3vh 0;
 	text-align: center;
 }
 
+footer
+{
+	display: 									flex;
+	flex-direction: 					column;
+	padding: 									3vh 5vw 3vh 5vw;
+	background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur1.jpg');
+	color: 										#E8E8E8;
+}
+
+.rowFoot
+{
+	display: 									flex;
+	flex-wrap: 								wrap;
+	justify-content: 					center;
+	align-items: 							center;
+	align-content: 						center;
+	padding: 									10vh 5vw 10vh 5vw;
+}
+
+.rowFoot2
+{
+	display: 									flex;
+	justify-content: 					space-around;
+	align-items: 							center;
+	margin: 									0 3vw;
+}
+
+.circle
+{
+	fill: 										white;
+	stroke: 									white;
+	width:  									0.6vw;
+	height: 									0.6vh;
+}
+
+.contactFoot, .talk, .topo
+{
+	display: 									flex;
+	flex-direction: 					column;
+	align-items: 							center;
+	align-content: 						center;
+	padding: 									5vh 2vw;
+	line-height: 							2em;
+}
+
+.talk h5
+{
+	font-size: 								1.5em;
+}
+
+.legal
+{
+	display: 									flex;
+	flex-wrap: 								wrap;
+	justify-content: 					space-between;
+	font-size: 								0.8em;
+}
+
+.contactFoot a
+{
+	cursor: 									pointer;
+	text-decoration: 					none;
+	color: 										#E8E8E8;
+	font-family: 							'Inconsolata', monospace;
+}
 /***************************************************** ANIMATION ******************************************/
 .tracking-in-expand-fwd {
 	-webkit-animation: 									tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
