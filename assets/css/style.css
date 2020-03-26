@@ -250,7 +250,7 @@ nav li:hover:before {
   visibility: 								visible;
   transform: 									scaleX(1);
 }
-/***************** MAIN ***********/
+/***************** COMMUNAUTE ***********/
 .presentation
 {
 		display: 										flex;
@@ -284,10 +284,10 @@ nav li:hover:before {
   padding: 										7vh 0;
 }
 
-.focus p, .specia p
+.focus p, .specia p, .join
 {
 	text-align: 								center;
-	padding: 										1vh 0;
+	padding: 										3vh 0;
 	font-size: 									1.2em;
 	color: 											#2d2c2aeb;
 }
@@ -311,6 +311,8 @@ nav li:hover:before {
 	list-style: 								none;
 	padding: 										1.5vh;
 }
+
+
 /**************** ESPACE RECRUTEUR ******/
 
 .listesTypesDev ul
@@ -872,13 +874,24 @@ padding: 											0.3vh 0;
 	z-index: 										1;
 }
 
+.starTrombi
+{
+ position: 										absolute;
+ z-index: 										2;
+ top: 												16px;
+ left: 												253px;
+ font-size: 									1.4em;
+ color: 											#fff;
+ text-shadow: 								#2d2c2aeb 2px 2px;
+}
+
 .textTrombi
 {
 	position: 									absolute;
 	z-index: 										2;
-	top: 												228px;
+	top: 												241px;
 	left: 											32px;
-	font-size: 									1.8em;
+	font-size: 									1.3em;
 	color: 											#fff;
 	text-shadow: 								#2d2c2aeb 2px 2px;
 }
@@ -890,7 +903,7 @@ padding: 											0.3vh 0;
  z-index: 										2;
  top: 												269px;
  left: 												33px;
- font-size: 									1.8em;
+ font-size: 									1.3em;
  color: 											#fff;
  text-shadow: 								#2d2c2aeb 2px 2px;
 }
