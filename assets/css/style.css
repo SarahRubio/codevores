@@ -95,6 +95,7 @@ h1
 h2
 {
   font-size: 									2rem;
+	font-family: 								'Inconsolata', monospace;
   text-align: 								center;
   color: 											#E8E8E8;
 }
@@ -161,7 +162,7 @@ header
 
 .connexion:hover, .inscription:hover, .connexion:active, .inscription:active
 {
-	border: 										#750202 .2em solid;
+	border: 										#E8E8E8 .2em solid;
 }
 
 .hamburger-menu
@@ -249,26 +250,68 @@ nav li:hover:before {
   visibility: 								visible;
   transform: 									scaleX(1);
 }
-/***************************************************** MAIN ************************************/
-main
-{
-	margin: 										10vh 10vw;
-}
-
+/***************** MAIN ***********/
 .presentation
 {
-	height: 										87vh;
-  display: 										flex;
-	flex-wrap: 									wrap;
+		display: 										flex;
+		flex-direction: 						column;
+		padding: 										0 5vw 4vh 5vw;
 }
+
 
 .presentation h2
 {
+	margin: 										0 5vw;
+	padding: 										5vh 5vw 7vh 5vw;
 	color: 											#2d2c2aeb;
-	font-size: 									2.5rem;
-	text-align: 								left;
+	font-size: 									2rem;
+	text-align: 								center;
 }
-/****************************************************** ESPACE RECRUTEUR ***************************/
+
+.focus
+{
+	background-color: 					#ffdcb926;
+	padding: 										2vh 5vw;
+	border-bottom: 							1px solid #80808024;
+	border-top: 								1px solid #80808024;
+}
+
+.focus h3, .specia h3
+{
+	color: 											#2d2c2aeb;
+  font-size: 									1.7em;
+  text-align: 								center;
+  padding: 										7vh 0;
+}
+
+.focus p, .specia p
+{
+	text-align: 								center;
+	padding: 										1vh 0;
+	font-size: 									1.2em;
+	color: 											#2d2c2aeb;
+}
+
+.listeDev
+{
+	display: 										flex;
+	justify-content: 						space-around;
+	flex-wrap: 									wrap;
+}
+.listeDev ul
+{
+
+	flex-direction: 						column;
+	height: 										60vh;
+	margin-bottom: 							5vh;
+}
+
+.listeDev li
+{
+	list-style: 								none;
+	padding: 										1.5vh;
+}
+/**************** ESPACE RECRUTEUR ******/
 
 .listesTypesDev ul
 {
@@ -276,7 +319,9 @@ main
 	display: 										flex;
 	flex-direction: 						column;
 }
-/****************************************************** CONNEXION **********************************/
+
+/************** CONNEXION *************/
+
 .bgConnexion
 {
 	  background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur1.jpg');
@@ -833,8 +878,7 @@ padding: 											0.3vh 0;
 	z-index: 										2;
 	top: 												228px;
 	left: 											32px;
-	height:											314px;
-	font-size: 									2em;
+	font-size: 									1.8em;
 	color: 											#fff;
 	text-shadow: 								#2d2c2aeb 2px 2px;
 }
@@ -846,8 +890,7 @@ padding: 											0.3vh 0;
  z-index: 										2;
  top: 												269px;
  left: 												33px;
- height:											314px;
- font-size: 									2em;
+ font-size: 									1.8em;
  color: 											#fff;
  text-shadow: 								#2d2c2aeb 2px 2px;
 }
@@ -1352,5 +1395,11 @@ footer
 	{
 		padding-bottom: 						2vh;
 		border:											none;
+	}
+
+	.rowFoot
+	{
+		display: flex;
+		flex-direction: column;
 	}
 }
