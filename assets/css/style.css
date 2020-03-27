@@ -56,20 +56,21 @@ table {
 
 .themeNuit
 {
+	background-color: 					#1b1b1b
   transition: 								color 2s, background-color 2s;
-	background:                 linear-gradient(0deg, rgba(1,1,1,0.5), rgb(25, 24, 23)),url('../images/fur1.jpg');
+	background:                 linear-gradient(0deg, rgba(1,1,1,0.5), rgb(25, 24, 23)),url('../images/fur2.jpg');
 }
 
 .themeJour header
 {
-  background-image: 					url('../images/fur1.jpg');
+  background-image: 					url('../images/fur2.jpg');
 	background-attachment: 			fixed;
   background-position: 				bottom;
 }
 
 .themeNuit header
 {
-  background-image: 					url('../images/fur1.jpg');
+  background-image: 					url('../images/fur2.jpg');
 	background-attachment: 			fixed;
   background-position: 				left;
 }
@@ -79,7 +80,7 @@ table {
 body
 {
     font-family: 							'Inconsolata', monospace;
-		background-color: 				#EAEAEA;
+		background-color: 				#dacfc49e;
 }
 
 h1
@@ -128,7 +129,7 @@ h2
 
 header
 {
-  background-image: 					url('../images/fur1.jpg');
+  background-image: 					url('../images/fur2.jpg');
   background-size: 						cover;
   height: 										87vh;
   display: 										flex;
@@ -204,6 +205,7 @@ header
 	padding: 2vh 1vw;
 	font-size: 1em;
 	width: 30vw;
+	text-decoration: none;
 }
 
 nav li
@@ -250,7 +252,116 @@ nav li:hover:before {
   visibility: 								visible;
   transform: 									scaleX(1);
 }
+/***************** ESPACE RECRUTEUR ET PROFESSIONNEL  */
+
+.proximite2, .confiance2
+{
+	display: 										flex;
+	flex-wrap: 									wrap;
+	justify-content: 						space-around;
+	align-items: 								center;
+}
+
+.titrecorps
+{
+    color: 										#2d2c2aeb;
+    font-size: 								1.7em;
+    text-align: 							left;
+    padding: 									4vh 0;
+}
+
+.proximite h3
+{
+    color: 										#2d2c2aeb;
+    font-size: 								1.7em;
+    text-align: 							left;
+    padding: 									4vh 0;
+}
+
+.paddingsquare
+{
+	padding:										0 5vw 5vh 5vw;
+}
+
+.proximite
+{
+	border-bottom: 							1px solid #80808024;
+	border-top: 								1px solid #80808024;
+	padding:										1vh 0 9vh 0;
+}
+
+.city
+{
+	display: 										flex;
+	flex-direction: 						column;
+	align-items: 								center;
+}
+
+.city h4
+{
+	padding: 						5vh 0;
+}
+
+.city img
+{
+	border-radius: 			50%;
+	filter: 						drop-shadow(2px 4px 6px black)
+}
+
+.verifies, .securise, .simplifie
+{
+	border-bottom: 							1px solid #80808024;
+}
+
+.securise, .confiance
+{
+	border-top: 								1px solid #80808024;
+}
+
+.paddingsquare p
+{
+	text-align: 								left;
+	padding: 										2vh 0;
+	font-size: 									1.2em;
+	color: 											#2d2c2aeb;
+}
+
+.descod
+{
+	width: 											287px;
+	height: 										79px;
+}
+
+.flexrow4
+{
+	display: 										flex;
+	align-items: 								center;
+	justify-content: 						flex-start;
+}
+
+.pad
+{
+	padding-right: 							2vw;
+	font-size: 									1.7em;
+}
+
+.pad2
+{
+	padding-left: 							5vw;
+}
+
+.bold
+{
+	font-weight: 								bold;
+}
+
+.paddingsquare2
+{
+	padding:										0 5vw;
+}
+
 /***************** COMMUNAUTE ***********/
+
 .presentation
 {
 		display: 										flex;
@@ -270,7 +381,6 @@ nav li:hover:before {
 
 .focus
 {
-	background-color: 					#ffdcb926;
 	padding: 										2vh 5vw;
 	border-bottom: 							1px solid #80808024;
 	border-top: 								1px solid #80808024;
@@ -281,13 +391,13 @@ nav li:hover:before {
 	color: 											#2d2c2aeb;
   font-size: 									1.7em;
   text-align: 								center;
-  padding: 										7vh 0;
+  padding: 										4vh 0;
 }
 
 .focus p, .specia p, .join
 {
 	text-align: 								center;
-	padding: 										3vh 0;
+	padding: 										2vh 0;
 	font-size: 									1.2em;
 	color: 											#2d2c2aeb;
 }
@@ -297,7 +407,9 @@ nav li:hover:before {
 	display: 										flex;
 	justify-content: 						space-around;
 	flex-wrap: 									wrap;
+	padding: 										6vh;
 }
+
 .listeDev ul
 {
 
@@ -326,7 +438,7 @@ nav li:hover:before {
 
 .bgConnexion
 {
-	  background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur1.jpg');
+	  background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur2.jpg');
 		background-size: 					auto, cover;
 		background-attachment: 		fixed;
 	  height: 									100%;
@@ -409,7 +521,7 @@ nav li:hover:before {
 
 .accueil:hover, .accueil:active
 {
-	border: 										#750202 .2em solid;
+	border: 										#E8E8E8 .2em solid;
 }
 
 .pasinscrit
@@ -549,56 +661,6 @@ nav li:hover:before {
 	justify-content: 						center;
 	padding: 										5vh 5vw;
 	margin: 										0 0 10vh 0;
-}
-
-.long-square h2
-{
-	font-size: 									2.5em;
-	color: 											#2d2c2aeb;
-	text-align: 								center;
-	line-height: 								6vh;
-	letter-spacing: 						0.2vw;
-}
-
-.boxL
-{
-	display: 										flex;
-	flex-direction: 						column;
-	justify-content: 						space-around;
-	align-content: 							space-around;
-	align-items: 								flex-start;
-	padding: 										5vh 5vw;
-	border: 										1px solid #2d2c2aeb;
-	margin: 										0 0 0 0;
-	width: 											30vw;
-}
-
-.boxL h3, .boxR h3
-{
-	font-size: 									2.5em;
-	color: 											#2d2c2aeb;
-	text-align: 								center;
-	line-height: 								6vh;
-	letter-spacing: 						0.2vw;
-	padding: 										6vh 0;
-}
-
-.boxR
-{
-	display: 										flex;
-	flex-direction: 						column;
-	justify-content: 						space-around;
-	align-content: 							space-around;
-	align-items: 								flex-end;
-	padding: 										5vh 5vw;
-	border: 										1px solid #2d2c2aeb;
-	margin: 										0 0 0 0;
-	width: 											30vw;
-}
-
-.empty
-{
-	width: 											50%;
 }
 
 .box
@@ -858,7 +920,7 @@ padding: 											0.3vh 0;
 	display: 										flex;
 	justify-content: 						space-around;
 	flex-wrap: 									wrap;
-	padding: 										2vh 0;
+	padding: 										8vh 0;
 }
 
 .card
@@ -906,6 +968,24 @@ padding: 											0.3vh 0;
  font-size: 									1.3em;
  color: 											#fff;
  text-shadow: 								#2d2c2aeb 2px 2px;
+}
+
+.priceTrombi
+{
+ position: 									absolute;
+ z-index: 										2;
+ top: 												304px;
+ left: 												192px;
+ font-size: 									0.8em;
+ color: 											#2d2c2aeb;
+ background-color: 						white;
+}
+
+.join1
+{
+	text-align: 								center;
+	font-size: 									1.4em;
+	color: 											#2d2c2aeb;
 }
 
 .actuJournee a
@@ -964,7 +1044,7 @@ padding: 											0.3vh 0;
 	margin: 										2vh 2vw;
 	width: 											23vw;
 	height: 										30vh;
-	background:                 linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur1.jpg');
+	background:                 linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur2.jpg');
 	background-size: 					  auto, cover;
 
 }
@@ -1108,55 +1188,41 @@ footer
 	display: 									flex;
 	flex-wrap: 								wrap;
 	justify-content: 					space-between;
-	font-size: 								0.8em;
+	font-size: 								0.9em;
 }
 
-.contactFoot a
+.contactFoot a, .legal a
 {
 	cursor: 									pointer;
 	text-decoration: 					none;
 	color: 										#E8E8E8;
 	font-family: 							'Inconsolata', monospace;
+	position: 								relative;
+	display: 									inline-block;
 }
+
+.contactFoot a::before, .legal a::before
+{
+	  content: 										"";
+	  position: 									absolute;
+	  width: 											100%;
+	  height: 										1px;
+	  bottom: 										0;
+	  left: 											0;
+	  background-color: 					#E8E8E8;
+	  visibility: 								hidden;
+	  transform: 									scaleX(0);
+	  transition: 								all .3s ease-in-out;
+	}
+
+.contactFoot a:hover:before, .legal a:hover:before
+{
+	  visibility: 								visible;
+	  transform: 									scaleX(1);
+}
+
+
 /***************************************************** ANIMATION ******************************************/
-.tracking-in-expand-fwd {
-	-webkit-animation: 									tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: 									tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@-webkit-keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: 					-0.5em;
-    -webkit-transform: 				translateZ(-700px);
-            transform: 				translateZ(-700px);
-    opacity: 									0;
-  }
-  40% {
-    opacity: 									0.6;
-  }
-  100% {
-    -webkit-transform: 				translateZ(0);
-            transform: 				translateZ(0);
-    opacity: 									1;
-  }
-}
-@keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: 					-0.5em;
-    -webkit-transform: 				translateZ(-700px);
-            transform: 				translateZ(-700px);
-    opacity: 									0;
-  }
-  40% {
-    opacity: 									0.6;
-  }
-  100% {
-    -webkit-transform: 				translateZ(0);
-            transform: 				translateZ(0);
-    opacity: 									1;
-  }
-}
-
 
 .scale-up-bottom:hover {
 	-webkit-animation: 					scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -1191,6 +1257,68 @@ footer
             transform: 							scale(1);
     -webkit-transform-origin: 			50% 100%;
             transform-origin: 			50% 100%;
+  }
+}
+
+.rotate-in-hor:hover {
+	-webkit-animation: rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.focus-in-contract:hover {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
   }
 }
 
@@ -1249,13 +1377,13 @@ footer
 
 	.hamburger:hover, .hamburger:active
 	{
-		border: 									#750202 .2em solid;
+		border: 									#E8E8E8 .1em solid;
 	}
 
 	.cross:hover, .cross:active
 	{
-		color: 										#2d2c2aeb;
-		font-size: 								2rem;
+		color: 										#E8E8E8;
+		font-size: 								1.7rem;
 	}
 
 	.hamburger-menu ul
@@ -1271,7 +1399,7 @@ footer
 
 	.hamburger-menu li:hover
 	{
-		font-size: 								2rem;
+		font-size: 								1.3rem;
 	}
 
 	nav
