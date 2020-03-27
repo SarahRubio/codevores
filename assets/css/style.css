@@ -81,6 +81,7 @@ body
 {
     font-family: 							'Inconsolata', monospace;
 		background-color: 				#dacfc49e;
+		color: 										#2d2c2aeb;
 }
 
 h1
@@ -93,10 +94,9 @@ h1
 	padding-bottom: 						5vh;
 }
 
-h2
+header h2
 {
   font-size: 									2rem;
-	font-family: 								'Inconsolata', monospace;
   text-align: 								center;
   color: 											#E8E8E8;
 }
@@ -264,7 +264,6 @@ nav li:hover:before {
 
 .titrecorps
 {
-    color: 										#2d2c2aeb;
     font-size: 								1.7em;
     text-align: 							left;
     padding: 									4vh 0;
@@ -272,7 +271,6 @@ nav li:hover:before {
 
 .proximite h3
 {
-    color: 										#2d2c2aeb;
     font-size: 								1.7em;
     text-align: 							left;
     padding: 									4vh 0;
@@ -323,7 +321,6 @@ nav li:hover:before {
 	text-align: 								left;
 	padding: 										2vh 0;
 	font-size: 									1.2em;
-	color: 											#2d2c2aeb;
 }
 
 .descod
@@ -359,6 +356,18 @@ nav li:hover:before {
 {
 	padding:										0 5vw;
 }
+/***************** FAQ  */
+
+.question
+{
+	font-size: 									1.4em;
+	padding: 										3vh 0;
+}
+
+.reponse
+{
+	display: none;
+}
 
 /***************** COMMUNAUTE ***********/
 
@@ -374,7 +383,6 @@ nav li:hover:before {
 {
 	margin: 										0 5vw;
 	padding: 										5vh 5vw 7vh 5vw;
-	color: 											#2d2c2aeb;
 	font-size: 									2rem;
 	text-align: 								center;
 }
@@ -388,7 +396,6 @@ nav li:hover:before {
 
 .focus h3, .specia h3
 {
-	color: 											#2d2c2aeb;
   font-size: 									1.7em;
   text-align: 								center;
   padding: 										4vh 0;
@@ -399,7 +406,6 @@ nav li:hover:before {
 	text-align: 								center;
 	padding: 										2vh 0;
 	font-size: 									1.2em;
-	color: 											#2d2c2aeb;
 }
 
 .listeDev
@@ -746,7 +752,7 @@ select
 
 .label-file:hover, .label-file:active
 {
-	border: 										solid 4px #750202;
+	border: 										solid 4px #E8E8E8;
 }
 
 .input-file
@@ -774,7 +780,6 @@ select
 {
 	margin: 										0 5vw;
 	padding: 										5vh 5vw 7vh 5vw;
-	color: 											#2d2c2aeb;
 	font-size: 									2rem;
 	text-align: 								center;
 }
@@ -796,7 +801,6 @@ select
 
 .typeActu h4
 {
-	color: 											#2d2c2aeb;
 	font-size: 									1.3rem;
 	text-align: 								center;
 }
@@ -826,7 +830,6 @@ select
 
 .actuGeekzone
 {
-	background-color: 					#ffdcb926;
 	padding: 										2vh 5vw;
 	border-bottom: 							1px solid #80808024;
 	border-top: 								1px solid #80808024;
@@ -841,7 +844,6 @@ select
 
 .actuInscription h3, .actuJournee h3
 {
-	color: 											#2d2c2aeb;
 	font-size: 									1.7em;
 	text-align: 								center;
 	padding: 										5vh 0;
@@ -849,7 +851,6 @@ select
 
 .actuGeekzone h3
 {
-	color: 											#2d2c2aeb;
 	font-size: 									1.7em;
 	text-align: 								left;
 	padding: 										5vh 0;
@@ -893,7 +894,6 @@ padding: 											0.3vh 0;
   height: 										1px;
   bottom: 										0;
   left: 											0;
-  background-color: 					#2d2c2aeb;
   visibility: 								hidden;
   transform: 									scaleX(0);
   transition: 								all .3s ease-in-out;
@@ -985,7 +985,6 @@ padding: 											0.3vh 0;
 {
 	text-align: 								center;
 	font-size: 									1.4em;
-	color: 											#2d2c2aeb;
 }
 
 .actuJournee a
@@ -1013,7 +1012,6 @@ padding: 											0.3vh 0;
 
 .actuJournee h4
 {
-	color: 											#a96234f7;
 	font-size: 									1.7rem;
 	text-align: 								center;
 	padding: 										0 0 3vh 0;
@@ -1031,7 +1029,6 @@ padding: 											0.3vh 0;
 	text-align: 								center;
   padding: 										1vh 0;
   font-size: 									1.2em;
-	color: 											#2d2c2aeb;
 }
 
 .columnflex
