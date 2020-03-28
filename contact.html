@@ -26,64 +26,55 @@
                 </div>
 
                 <div class="form_content">
-                  <form class="" method="post">
-
-                      <!-- <div class="champ">
-                        <label for="" class="labelC">Quel service souhaitez-vous contacter?</label>
-                        <select class="" name="">
-                            <option value="">Service commercial</option>
-                            <option value="">Service technique</option>
-                            <option value="">Service réclamations</option>
-                        </select>
-                      </div> -->
+                  <form class="" name="formcontact" method="post" action="mailto:sarahrubio.pro@gmail.com">
 
                       <div class=" champ check">
                           <p>Quel service souhaitez-vous contacter?</p>
                           <div class="boxing">
                                 <div class="check-box">
-                                  <input type="checkbox" name="" value="" id="serviceCommercial"><label for="serviceCommercial">Service commercial</label>
+                                  <input type="checkbox" name="service" value="serviceCommercial" id="serviceCommercial"><label for="serviceCommercial">Service commercial</label>
                                 </div>
                                 <div class="check-box">
-                                  <input type="checkbox" name="" value="" id="serviceTechnique"><label for="serviceTechnique">Service technique</label>
+                                  <input type="checkbox" name="service" value="serviceTechnique" id="serviceTechnique"><label for="serviceTechnique">Service technique</label>
                                 </div>
                                 <div class="check-box">
-                                  <input type="checkbox" name="" value="" id="serviceReclamations"><label for="serviceReclamations">Service réclamations</label>
+                                  <input type="checkbox" name="service" value="serviceReclamations" id="serviceReclamations"><label for="serviceReclamations">Service réclamations</label>
                                 </div>
                           </div>
                       </div>
 
                       <div class="champ">
                         <label for="nom" class="labelC">Nom* :</label>
-                        <input type="text" name="" value="" id="nom" placeholder="Nom" class="inputC">
+                        <input type="text" name="nom" value="" id="nom" placeholder="Nom" class="inputC">
                       </div>
 
                       <div class="champ">
                         <label for="prenom" class="labelC">Prénom* :</label>
-                        <input type="text" name="" value="" id="prenom" placeholder="Prénom" class="inputC">
+                        <input type="text" name="prenom" value="" id="prenom" placeholder="Prénom" class="inputC">
                       </div>
 
                       <div class="champ">
                         <label for="email" class="labelC">E-mail* :</label>
-                        <input type="email" name="" value="" id="email" placeholder="Exemple@mail.com" class="inputC" required>
+                        <input type="email" name="email" value="" id="email" placeholder="Exemple@mail.com" class="inputC" required>
                       </div>
 
                       <div class="champ">
                         <label for="object" class="labelC">Objet de votre demande: </label>
-                        <textarea name="name" rows="1" cols="20" id="object" placeholder="Objet de votre message" required></textarea>
+                        <textarea name="objet" rows="1" cols="20" id="object" placeholder="Objet de votre message" required></textarea>
                       </div>
 
                       <div class="champ">
-                        <textarea name="name" rows="10" cols="5" id="comments" placeholder="Votre message"></textarea>
+                        <textarea name="message" rows="10" cols="5" id="comments" placeholder="Votre message"></textarea>
                       </div>
 
                       <div class="champ">
                         <label for="file-up" class="label-file">Joindre un document</label>
-                        <input type="file" name="" value="" id="file-up" class="input-file">
+                        <input type="file" name="fichierJoint" value="" id="file-up" class="input-file">
                         <p class="preview">Aucun fichier sélectionné pour le moment.</p>
                       </div>
 
                       <div class="row-center">
-                        <input type="submit" name="" value="Envoyer" class="envoyer">
+                        <input type="submit" name="envoyer" value="Envoyer" class="envoyer">
                       </div>
 
                   </form>
