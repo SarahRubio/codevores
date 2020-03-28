@@ -58,7 +58,7 @@ table {
 .themeNuit
 {
 	background-color: 					#0c0c0c;
-	color: 											#E8E8E8;
+	color: 											#94917d;
 }
 
 .themeJour header
@@ -80,7 +80,7 @@ table {
 
 body
 {
-    font-family: 							'Inconsolata', monospace;
+  font-family: 							'Inconsolata', monospace;
 }
 
 h1
@@ -371,8 +371,13 @@ nav li:hover:before {
 	margin: 										3vh 0;
 	border:											solid 1px;
 	border-radius: 							50%;
-	color: 											#E8E8E8;
 	background-image: 					url('../images/fur1.jpg');
+}
+
+.Inscrivez a
+{
+	text-decoration: 						none;
+	color: 											#E8E8E8;
 }
 
 .Inscrivez:hover
@@ -387,7 +392,30 @@ nav li:hover:before {
 	font-size: 									1.4em;
 	padding: 										3vh 0;
 	cursor: 										pointer;
+	position: 									relative;
+	display: 										inline-block;
 }
+
+.question::before
+{
+	  content: 										"";
+	  position: 									absolute;
+	  width: 											100%;
+	  height: 										1px;
+	  bottom: 										0;
+	  left: 											0;
+	  background-color: 					#2d2c2aeb;
+	  visibility: 								hidden;
+	  transform: 									scaleX(0);
+	  transition: 								all .3s ease-in-out;
+	}
+
+.question:hover:before
+{
+	  visibility: 								visible;
+	  transform: 									scaleX(1);
+}
+
 
 .display-none
 {
@@ -412,7 +440,135 @@ nav li:hover:before {
 	color: 										#E8E8E8;
 	padding: 									0 5vw;
 }
+/***************** PAGE PROFESSIONNELLE  */
 
+.pagepro
+{
+display: 										flex;
+flex-direction: 						column;
+border: 										#E8E8E8 solid 1px;
+margin: 										0 10vw 5vh 10vw;
+padding: 										5vh 2vw;
+background-color: 					#dacfc49e;
+color: 											black;
+}
+
+.carte
+{
+	display: 									flex;
+	flex-wrap: 								wrap;
+	justify-content: 					center;
+	align-items: 							stretch;
+}
+
+.codystar
+{
+	font-family: 							'Codystar';
+	font-size: 								3em;
+	color: 										aquamarine;
+}
+
+.padleft
+{
+	padding-left: 							3vw;
+}
+
+.margleft
+{
+	margin-left: 							1vw;
+}
+
+.row2
+{
+	display: 										flex;
+	flex-wrap: 									wrap;
+}
+
+.jcenter
+{
+	justify-content: 						center;
+}
+
+.aiflexend
+{
+	align-items: 								flex-end;
+}
+
+.aicenter
+{
+	align-items: 								center;
+}
+
+.flexC
+{
+	display: 										flex;
+	flex-direction: 						column;
+	justify-content: 						space-around;
+	align-items: 								stretch;
+}
+
+.aquamarine
+{
+	color: 											aquamarine;
+}
+
+.buttontag
+{
+	cursor: 										pointer;
+	border-radius: 							10px;
+  cursor: 										pointer;
+  background-color: 					aquamarine;
+  padding: 										1.2vh 1.4vw;
+	font-size: 									0.8em;
+	font-weight: 								500;
+}
+
+.sousTitre
+{
+	font-size: 									1.6em;
+
+}
+
+.border-bottom-ab
+{
+	border-bottom: 							1px solid aquamarine;
+}
+
+.column3
+{
+	display: 										flex;
+	flex-direction: 						column;
+}
+
+.padtop
+{
+	padding-top: 								3vh;
+}
+
+.padbot
+{
+	padding-bottom: 						4vh;
+}
+
+.margbotxs
+{
+	margin-bottom: 						2vh;
+}
+
+.quote-icon
+{
+	font-size: 								1.5em;
+}
+
+.lineheight
+{
+	line-height: 							4vh;
+}
+
+.fontm
+{
+	font-size: 								1.3em;
+}
 /***************** COMMUNAUTE ***********/
 
 .presentation
@@ -472,6 +628,7 @@ nav li:hover:before {
 {
 	list-style: 								none;
 	padding: 										1.5vh;
+	cursor: 										pointer;
 }
 
 
@@ -508,10 +665,10 @@ nav li:hover:before {
 .accueil
 {
 	padding: 										2vh 1.2vw;
-	border: 										#E8E8E8 .1em solid;
+	border: 										#E8E8E8 1px solid;
 	background-color: 					inherit;
 	color: 											#E8E8E8;
-	font-size: 									1rem;
+	font-size: 									1em;
 	cursor: 										pointer;
 }
 
@@ -835,6 +992,7 @@ select
 	justify-content: 						space-around;
 	border: 										solid 1px #2d2c2aeb;
 	padding: 										4vh 1vw 4vh 1vw;
+	background-color: 					#93cca485
 }
 
 .flexrow
@@ -855,9 +1013,9 @@ select
 	color: 											#2d2c2aeb;
 }
 
-.yellow
+.green
 {
-	color: 											#DD8E27;
+	color: 											aquamarine;
 }
 
 .small
@@ -989,6 +1147,21 @@ padding: 											0.3vh 0;
  font-size: 									1.4em;
  color: 											#fff;
  text-shadow: 								#2d2c2aeb 2px 2px;
+}
+
+.starTrombi:hover
+{
+	color: 											#ffcb06;
+}
+
+.starTrombiFull
+{
+	color: 											#ffcb06;
+}
+
+.starTrombiFull:hover
+{
+	color: 											#fff;
 }
 
 .textTrombi
@@ -1149,37 +1322,13 @@ padding: 											0.3vh 0;
 
 
 /****************** Footer  */
-.about_infos {
-    position: relative;
-    z-index: 200;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1250px;
-    margin: 250px auto 450px auto;
-}
-
-.aboutInfosItems
-{
-	position: relative;
-	width: 236px;
-	padding: 48px 0;
-	min-height: 155px;
-	text-align: center;
-}
 
 footer
 {
 	display: 									flex;
 	flex-direction: 					column;
 	padding: 									3vh 5vw 3vh 5vw;
-	background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur1.jpg');
+	background:               linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur2.jpg');
 	color: 										#E8E8E8;
 }
 
@@ -1302,31 +1451,31 @@ footer
 }
 
 .rotate-in-hor:hover {
-	-webkit-animation: rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: 					rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: 					rotate-in-hor 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes rotate-in-hor {
   0% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
+    -webkit-transform: 				rotateX(360deg);
+            transform: 				rotateX(360deg);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: 				rotateX(0deg);
+            transform: 				rotateX(0deg);
     opacity: 1;
   }
 }
 @keyframes rotate-in-hor {
   0% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
+    -webkit-transform: 				rotateX(360deg);
+            transform: 				rotateX(360deg);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: 				rotateX(0deg);
+            transform: 				rotateX(0deg);
     opacity: 1;
   }
 }
@@ -1398,8 +1547,8 @@ footer
 
 	.searchbar
 	{
-		width: 84vw;
-		font-size: 0.7em;
+		width: 										84vw;
+		font-size: 								0.7em;
 	}
 
   .connexion, .inscription
@@ -1560,12 +1709,12 @@ footer
 
 	.actuGeekzone h3, .actuInscription h3, .actuJournee h3
 	{
-	    padding: 2vh;
+	    padding: 								2vh;
 	}
 
 	.columnflex
 	{
-		width: 50vw;
+		width: 										50vw;
 	}
 
 	.typeActu
@@ -1581,8 +1730,8 @@ footer
 
 	.rowFoot
 	{
-		display: flex;
-		flex-direction: column;
+		display: 										flex;
+		flex-direction: 						column;
 	}
 
 	.Inscrivez
