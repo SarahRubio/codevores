@@ -1,19 +1,30 @@
-// Changement de thème :
+// Changement de thème
 
-// function changerTheme(classTheme) {
-//   document.querySelector('body').classList.remove('themeJour', 'themeNuit');
-//   document.querySelector('body').classList.add(classTheme);
-//   console.log('alert');
-// }
-//
-// document.querySelector('.jour').addEventListener('click', function () {
-//   changerTheme('themeJour')
-// });
-// document.querySelector('.nuit').addEventListener('click', function () {
-//   changerTheme('themeNuit')
-// });
+function changerTheme(classTheme) {
+  document.querySelector('body').classList.remove('themeJour', 'themeNuit');
+  document.querySelector('body').classList.add(classTheme);
+}
 
-// Menu hamburger et cross :
+if(document.querySelector('.jour')) {
+    document.querySelector('.jour').addEventListener('click', function () {
+      changerTheme('themeJour')
+    });
+
+    document.querySelector('.nuit').addEventListener('click', function () {
+      changerTheme('themeNuit')
+    });
+};
+
+if(document.querySelector('.jourbis')) {
+    document.querySelector('.jourbis').addEventListener('click', function () {
+      changerTheme('themeJour')
+    });
+    document.querySelector('.nuitbis').addEventListener('click', function () {
+      changerTheme('themeNuit')
+    });
+};
+
+// Menu hamburger et cross
 
 if(document.querySelector('.hamburger')) {
     document.querySelector(".hamburger").addEventListener('click', function ()
@@ -34,7 +45,6 @@ if(document.querySelector('.cross')) {
 };
 
 // JSON geekzone
-
 
 function afficheArticle(article) {
     let element = document.createElement("li");
@@ -60,7 +70,7 @@ if(document.querySelector('.actuJson')) {
 };
 
 
-// Input-file.
+// Input-file
 
 let input = document.querySelector('#file-up');
 let preview = document.querySelector('.preview');
@@ -101,3 +111,46 @@ function returnFileSize(number) {
     return (number/1048576).toFixed(1) + ' Mo';
   }
 }
+
+// FAQ
+function toogleVisible(numero) {
+  let reponse = `.reponse${numero}`;
+  document.querySelector(reponse).classList.toggle('display-none');
+}
+
+if(document.querySelector('.question')) {
+    document.querySelector(".question1").addEventListener('click', function ()
+    {
+      toogleVisible('1');
+    });
+
+    document.querySelector(".question2").addEventListener('click', function ()
+    {
+      toogleVisible('2');
+    });
+
+    document.querySelector(".question3").addEventListener('click', function ()
+    {
+      toogleVisible('3');
+    });
+
+    document.querySelector(".question4").addEventListener('click', function ()
+    {
+      toogleVisible('4');
+    });
+
+    document.querySelector(".question5").addEventListener('click', function ()
+    {
+      toogleVisible('5');
+    });
+
+    document.querySelector(".question6").addEventListener('click', function ()
+    {
+      toogleVisible(6);
+    });
+
+    document.querySelector(".question7").addEventListener('click', function ()
+    {
+      toogleVisible(7);
+    });
+};
