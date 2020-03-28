@@ -146,11 +146,61 @@ if(document.querySelector('.question')) {
 
     document.querySelector(".question6").addEventListener('click', function ()
     {
-      toogleVisible(6);
+      toogleVisible('6');
     });
 
     document.querySelector(".question7").addEventListener('click', function ()
     {
-      toogleVisible(7);
+      toogleVisible('7');
     });
+};
+
+// starTrombi
+
+function addClass(numero) {
+  let star = `.star${numero}`;
+  document.querySelector(star).classList.toggle('starTrombiFull');
+}
+
+if(document.querySelector('.starTrombi')) {
+    document.querySelector(".star1").addEventListener('click', function ()
+    {
+      addClass('1');
+    });
+
+    document.querySelector(".star2").addEventListener('click', function ()
+    {
+      addClass('2');
+    });
+
+    document.querySelector(".star3").addEventListener('click', function ()
+    {
+      addClass('3');
+    });
+
+    document.querySelector(".star4").addEventListener('click', function ()
+    {
+      addClass('4');
+    });
+
+    document.querySelector(".star5").addEventListener('click', function ()
+    {
+      addClass(5);
+    });
+
+    document.querySelector(".star6").addEventListener('click', function ()
+    {
+      addClass(6);
+    });
+
+    document.querySelector(".star7").addEventListener('click', function ()
+    {
+      addClass(7);
+    });
+
+    document.querySelector(".star8").addEventListener('click', function ()
+    {
+      addClass(8);
+    });
+
 };
