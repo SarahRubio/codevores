@@ -75,7 +75,7 @@ if(document.querySelector('.actuJson')) {
 let input = document.querySelector('#file-up');
 let preview = document.querySelector('.preview');
 
-if(document.querySelector('.label-file')) {
+if(document.querySelector('.label-file-t')) {
   input.addEventListener('change', updateFileDisplay);
 };
 
@@ -203,4 +203,32 @@ if(document.querySelector('.starTrombi')) {
       addClass(8);
     });
 
+};
+
+// Formulaire proposition PROJET
+
+if(document.querySelector('.proposer')) {
+    document.querySelector(".proposer").addEventListener('click', function ()
+    {
+      document.querySelector('.proposer').style.display="none";
+      document.querySelector('.formprojet').style.display="inline";
+    });
+};
+
+if(document.querySelector('.envoyerp')) {
+    document.querySelector(".envoyerp").addEventListener('click', function ()
+    {
+      document.querySelector('.proposerA').style.display="inline";
+      document.querySelector('.propositionE').style.display="inline";
+      document.querySelector('.formprojet').style.display="none";
+    });
+};
+
+if(document.querySelector('.propositionE')) {
+    document.querySelector(".proposerA").addEventListener('click', function ()
+    {
+      document.querySelector('.formprojet').style.display="inline";
+      document.querySelector('.proposerA').style.display="none";
+      document.querySelector('.propositionE').style.display="none";
+    });
 };
