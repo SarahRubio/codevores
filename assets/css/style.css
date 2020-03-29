@@ -377,6 +377,11 @@ nav li:hover:before {
 	padding:										0 5vw 5vh 5vw;
 }
 
+.paddingsquare .white
+{
+	margin: 										1vh 0;
+}
+
 .proximite
 {
 	border-bottom: 							1px solid mediumaquamarine;
@@ -450,7 +455,7 @@ nav li:hover:before {
 
 .paddingsquare2
 {
-	padding:										0 5vw;
+	padding:										0 2vw;
 }
 
 .center
@@ -2126,4 +2131,8 @@ footer
 		height: 										88vh;
 	}
 
+	.nonem
+	{
+		display: 										none;
+	}
 }
