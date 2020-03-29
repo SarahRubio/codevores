@@ -51,14 +51,14 @@ table {
 
 .themeJour
 {
-	background-color: 				#dacfc49e;
-	color: 										#2d2c2aeb;
+	background-color: 					#dacfc49e;
+	color: 											black;
 }
 
 .themeNuit
 {
 	background-color: 					#0c0c0c;
-	color: 											#94917d;
+	color: 											black;
 }
 
 .themeJour header
@@ -81,6 +81,11 @@ table {
 body
 {
   font-family: 							'Inconsolata', monospace;
+}
+
+main
+{
+	background-color: 				#dacfc49e;
 }
 
 h1
@@ -253,6 +258,98 @@ nav li:hover:before {
 }
 /***************** ESPACE RECRUTEUR ET PROFESSIONNEL  */
 
+.aqua
+{
+	background-color: 				#689c2d;
+	padding: 									1vh 1vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.aquamarineb
+{
+	background-color: 				mediumaquamarine;
+	padding: 									1vh 1vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+	cursor: 									pointer;
+}
+
+.aqua:hover
+{
+	background-color: 				#6da52e;
+	border: 									1px solid black;
+}
+
+.jaune
+{
+	background-color: 				#d45b49;
+	padding: 									1vh 1vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.jaune:hover
+{
+	background-color: 				#f95c45;
+	border: 									1px solid black;
+}
+
+.orange
+{
+	background-color: 				#6a4376;
+	padding: 									1vh 1vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.orange:hover
+{
+	background-color: 				#994bb1;
+	border: 									1px solid black;
+}
+
+.blue
+{
+	background-color: 				#2c96b7;
+	padding: 									1vh 1vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.blue:hover
+{
+	background-color: 				#28a6cefa;
+	border: 									1px solid black;
+}
+
+.white
+{
+	background-color: 				#c6dfe68a;
+	padding: 									1.2vh 1vw;
+	margin: 									4vh 0;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.whites
+{
+	background-color: 				#c6dfe6;
+	padding: 									0.2vh 0.5vw;
+	border-radius: 						10px;
+	display: 									inline-block;
+}
+
+.fonts
+{
+	font-size: 								0.9em;
+}
+
+.margfull2h1w
+{
+	margin: 									2vh 1vw;
+}
+
 .proximite2, .confiance2
 {
 	display: 										flex;
@@ -282,8 +379,8 @@ nav li:hover:before {
 
 .proximite
 {
-	border-bottom: 							1px solid #80808024;
-	border-top: 								1px solid #80808024;
+	border-bottom: 							1px solid mediumaquamarine;
+	border-top: 								1px solid mediumaquamarine;
 	padding:										1vh 0 9vh 0;
 }
 
@@ -307,12 +404,12 @@ nav li:hover:before {
 
 .border-bottom, .verifies, .securise, .simplifie
 {
-	border-bottom: 							1px solid #80808024;
+	border-bottom: 							1px solid mediumaquamarine;
 }
 
 .border-top, .securise, .confiance
 {
-	border-top: 								1px solid #80808024;
+	border-top: 								1px solid mediumaquamarine;
 }
 
 .paddingsquare p
@@ -447,7 +544,7 @@ nav li:hover:before {
 display: 										flex;
 flex-direction: 						column;
 border: 										#E8E8E8 solid 1px;
-margin: 										0 10vw 5vh 10vw;
+margin: 										0 7vw 5vh 7vw;
 padding: 										5vh 2vw;
 background-color: 					#dacfc49e;
 color: 											black;
@@ -464,6 +561,10 @@ color: 											black;
 .codystar
 {
 	font-family: 							'Codystar';
+}
+
+.aquabig
+{
 	font-size: 								3em;
 	color: 										aquamarine;
 }
@@ -481,6 +582,10 @@ color: 											black;
 .row2
 {
 	display: 										flex;
+}
+
+.wrap
+{
 	flex-wrap: 									wrap;
 }
 
@@ -492,6 +597,11 @@ color: 											black;
 .aiflexend
 {
 	align-items: 								flex-end;
+}
+
+.jsaround
+{
+	justify-content: 						space-around;
 }
 
 .aicenter
@@ -523,6 +633,12 @@ color: 											black;
 	font-weight: 								500;
 }
 
+.buttontag:hover
+{
+	border: 										black solid 1px;
+	background-color:						#52bb98;
+}
+
 .sousTitre
 {
 	font-size: 									1.6em;
@@ -532,6 +648,11 @@ color: 											black;
 .border-bottom-ab
 {
 	border-bottom: 							1px solid aquamarine;
+}
+
+.border-top-ab
+{
+	border-top: 							1px solid aquamarine;
 }
 
 .column3
@@ -550,9 +671,36 @@ color: 											black;
 	padding-bottom: 						4vh;
 }
 
+.padfull2
+{
+	padding: 										2vh 2vw;
+}
+
+.marglr
+{
+	margin-left: 								5vw;
+	margin-right: 							5vw;
+}
+
+.margtb
+{
+	margin-top: 								3vh;
+  margin-bottom: 							3vh;
+}
+
 .margbotxs
 {
 	margin-bottom: 						2vh;
+}
+
+.margtopxl
+{
+	margin-top: 							14vh;
+}
+
+.margtop3
+{
+	margin-top: 							3vh;
 }
 
 .quote-icon
@@ -568,7 +716,73 @@ color: 											black;
 .fontm
 {
 	font-size: 								1.3em;
+	font-weight: 							400;
 }
+
+.formprojet
+{
+	display: 									flex;
+  flex-direction: 					column;
+  border: 									aquamarine solid 1px;
+  margin: 									0 5vw 5vh 5vw;
+  padding-bottom: 					5vh;
+}
+
+.formprojet .labelC
+{
+	text-align: 								left;
+	padding-left: 							5vw;
+	font-size: 									1.3em;
+}
+
+.formprojet .inputC
+{
+	text-align: 								left;
+	margin: 										4vh 5vw;
+	padding: 										2vh 1vw;
+	font-size: 									1em;
+}
+
+.labeltag
+{
+	margin: 										2vh 5vw 0 5vw;
+	background-color: 					aquamarine;
+	padding: 										2vh 2vw;
+	cursor: 										pointer;
+	text-align: 								center;
+}
+
+.labeltag:hover
+{
+	background-color:						#52bb98;
+}
+
+.formprojet
+{
+	display: 										none;
+}
+
+.proposerA, .propositionE
+{
+	display: 										none;
+}
+
+.formprojet textarea
+{
+	margin: 										4vh 5vw 4vh 5vw;
+}
+
+.formprojet .check p, .formprojet .boxing label
+{
+	color: 											black;
+}
+
+.formprojet .boxing label
+{
+	font-size: 								1em;
+  margin: 									2vh 0vw 2vh 0;
+}
+
 /***************** COMMUNAUTE ***********/
 
 .presentation
@@ -590,8 +804,7 @@ color: 											black;
 .focus
 {
 	padding: 										2vh 5vw;
-	border-bottom: 							1px solid #80808024;
-	border-top: 								1px solid #80808024;
+	border-bottom: 							1px solid aquamarine;
 }
 
 .focus h3, .specia h3
@@ -608,25 +821,38 @@ color: 											black;
 	font-size: 									1.2em;
 }
 
+.buttonF
+{
+	background-color: 					mediumaquamarine;
+	padding: 										1.6vh 1.6vw;
+	border-radius: 							10px;
+	margin: 										6vh 0 4vh 0;
+	color: 											#2d2c2aeb;
+}
+
+
 .listeDev
 {
 	display: 										flex;
 	justify-content: 						space-around;
 	flex-wrap: 									wrap;
-	padding: 										6vh;
+	padding: 										2vh;
+	margin: 										4vh 0 9vh 0;
 }
 
 .listeDev ul
 {
 
 	flex-direction: 						column;
-	height: 										60vh;
+	height: 										71vh;
 	margin-bottom: 							5vh;
+	margin-top: 								3vh;
 }
 
 .listeDev li
 {
 	list-style: 								none;
+	margin: 										1vh 0;
 	padding: 										1.5vh;
 	cursor: 										pointer;
 }
@@ -915,7 +1141,7 @@ justify-content: 							center;
 
 .envoyer:hover, .envoyer:active
 {
-	border: 										solid 4px #750202;
+	border: 										solid 4px #E8E8E8;
 }
 
 textarea
@@ -990,15 +1216,19 @@ select
 	display: 										flex;
 	flex-wrap: 									wrap;
 	justify-content: 						space-around;
-	border: 										solid 1px #2d2c2aeb;
-	padding: 										4vh 1vw 4vh 1vw;
-	background-color: 					#93cca485
+	border: 										solid 1px mediumaquamarine;
+	padding: 										7vh 1vw 7vh 1vw;
 }
 
 .flexrow
 {
 	display: 										flex;
 	align-items: 								center;
+}
+
+.actujoin
+{
+	padding: 										0 5vw 5vh 5vw;
 }
 
 .typeActu h4
@@ -1010,12 +1240,12 @@ select
 .typeActu a
 {
 	text-decoration: 						none;
-	color: 											#2d2c2aeb;
+	color: 											black;
 }
 
 .green
 {
-	color: 											aquamarine;
+	color: 											#5dd6ad;
 }
 
 .small
@@ -1033,8 +1263,8 @@ select
 .actuGeekzone
 {
 	padding: 										2vh 5vw;
-	border-bottom: 							1px solid #80808024;
-	border-top: 								1px solid #80808024;
+	border-bottom: 							1px solid aquamarine;
+	border-top: 								1px solid aquamarine;
 }
 
 .actuGeekzone a
@@ -1044,7 +1274,7 @@ select
 	text-align: 								left;
 }
 
-.actuInscription h3, .actuJournee h3
+.actuInscription h3, .actuJournee h3, .actujoin h3
 {
 	font-size: 									1.7em;
 	text-align: 								center;
@@ -1082,7 +1312,7 @@ padding: 											0.3vh 0;
 {
 	text-decoration: 						none;
 	font-size: 									1.3em;
-	color: 											#2d2c2aeb;
+	color: 											black;
 	position: 									relative;
 	display: 										inline-block;
 	padding: 										2vh 0;
@@ -1096,6 +1326,7 @@ padding: 											0.3vh 0;
   height: 										1px;
   bottom: 										0;
   left: 											0;
+	background-color: 					#2d2c2aeb;
   visibility: 								hidden;
   transform: 									scaleX(0);
   transition: 								all .3s ease-in-out;
@@ -1107,14 +1338,38 @@ padding: 											0.3vh 0;
   transform: 									scaleX(1);
 }
 
-.actuInscription
+.padIns
 {
-	padding: 										0 5vw 5vh 5vw;
+	padding: 										0 5vw 11vh 5vw;
+}
+
+.bordertop-aqua
+{
+	border-top: 								1px solid aquamarine;
 }
 
 .actuJournee
 {
-	padding: 										1vh 5vw;
+	padding: 										1vh 5vw 18vh 5vw;
+}
+
+.cartep
+{
+	border:											1px solid black;
+	padding: 										0vh 0vw 3vh 0vw;
+	margin-bottom: 							3vh;
+	width: 											302px;
+	border-radius: 							20px;
+}
+
+.marglr1
+{
+	margin: 										0 1vw;
+}
+
+.textc
+{
+	text-align: 								center;
 }
 
 .trombi
@@ -1122,20 +1377,22 @@ padding: 											0.3vh 0;
 	display: 										flex;
 	justify-content: 						space-around;
 	flex-wrap: 									wrap;
-	padding: 										8vh 0;
+	padding: 										5vh 0;
 }
 
 .card
 {
 	position: 									relative;
 	height:											314px;
-	border: 										solid 1px #694a36f7;
+	border: 										solid 1px #000;
+	border-radius: 							20px;
 }
 
 .imgTrombi
 {
 	position: 									relative;
 	z-index: 										1;
+	border-radius: 							20px;
 }
 
 .starTrombi
@@ -1168,7 +1425,7 @@ padding: 											0.3vh 0;
 {
 	position: 									absolute;
 	z-index: 										2;
-	top: 												241px;
+	top: 												266px;
 	left: 											32px;
 	font-size: 									1.3em;
 	color: 											#fff;
@@ -1180,11 +1437,13 @@ padding: 											0.3vh 0;
 {
  position: 									absolute;
  z-index: 										2;
- top: 												269px;
- left: 												33px;
- font-size: 									1.3em;
- color: 											#fff;
- text-shadow: 								#2d2c2aeb 2px 2px;
+ top: 												308px;
+ left: 												9px;
+ font-size: 									0.8em;
+ color: 											#2d2c2aeb;
+ background-color: 						#2c96b7;
+ padding: 										1.3vh 1vw;
+ border-radius: 							10px;
 }
 
 .priceTrombi
@@ -1192,10 +1451,12 @@ padding: 											0.3vh 0;
  position: 									absolute;
  z-index: 										2;
  top: 												304px;
- left: 												192px;
+ left: 												205px;
  font-size: 									0.8em;
  color: 											#2d2c2aeb;
- background-color: 						white;
+ background-color: 						#689c2d;
+ padding: 										1vh 1vw;
+ border-radius: 							10px;
 }
 
 .join1
@@ -1208,7 +1469,7 @@ padding: 											0.3vh 0;
 {
 	text-decoration: 						none;
 	font-size: 									1em;
-	color: 											#2d2c2aeb;
+	color: 											black;
 	cursor: 										pointer;
 }
 
@@ -1259,7 +1520,7 @@ padding: 											0.3vh 0;
 	width: 											23vw;
 	height: 										30vh;
 	background:                 linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur2.jpg');
-	background-size: 					  auto, cover;
+	background-size: 					  auto;
 
 }
 
@@ -1512,6 +1773,40 @@ footer
   }
 }
 
+.shadow-drop-2-center:hover {
+	-webkit-animation: 												shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: 												shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
 /***************************************************** MEDIA QUERIES *************************************/
 
 @media screen and (min-width: 1200px)
@@ -1724,7 +2019,7 @@ footer
 
 	.card
 	{
-		padding-bottom: 						2vh;
+		padding-bottom: 						8vh;
 		border:											none;
 	}
 
@@ -1737,6 +2032,98 @@ footer
 	.Inscrivez
 	{
 		padding: 										10vh 2vw;
+	}
+
+	.buttonF
+	{
+		margin-top: 								0;
+	}
+
+	.presentation h2
+	{
+		font-size: 									1.8rem;
+	}
+
+	.typeActu h4
+	{
+		font-size: 									1.1rem;
+	}
+
+	.presentation
+	{
+    padding: 										0 2vw 4vh 2vw;
+	}
+
+	.typeActu
+	{
+		flex-direction: 						column;
+	}
+
+	.flexrow
+	{
+		justify-content: 						space-around;
+	}
+
+	.flexrow2
+	{
+		padding: 										0vh 6vw;
+	}
+
+	.padIns
+	{
+    padding: 										0 5vw 6vh 5vw;
+	}
+
+	.pad
+	{
+		padding-right: 							6vw;
+	}
+
+	.margtopxl
+	{
+    margin-top: 								2vh;
+	}
+
+	.fontm
+	{
+    font-size: 									1em;
+  }
+
+	.sousTitre
+	{
+    font-size: 									1.3em;
+	}
+
+	.fontpxs
+	{
+		font-size: 									1em;
+	}
+
+	.small2
+	{
+    margin-right: 							5vw;
+    font-size: 									1em;
+	}
+
+	.pagepro
+	{
+		padding: 										0vh 2vw;
+		margin: 										0 0 0 0;
+	}
+
+	.rowFoot
+	{
+    padding: 										2vh 5vw 5vh 5vw;
+	}
+
+	.centermedia
+	{
+		text-align: 								center;
+	}
+
+	.listeDev ul
+	{
+		height: 										88vh;
 	}
 
 }
