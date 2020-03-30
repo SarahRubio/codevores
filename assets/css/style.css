@@ -340,6 +340,11 @@ nav li:hover:before {
 	display: 									inline-block;
 }
 
+.pointer
+{
+	cursor: 									pointer;
+}
+
 .fonts
 {
 	font-size: 								0.9em;
