@@ -35,6 +35,24 @@ if(document.querySelector('.hamburger')) {
     });
 };
 
+if(document.querySelector('.hamburger-index')) {
+    document.querySelector(".hamburger-index").addEventListener('click', function ()
+    {
+      document.querySelector('.hamburger-menu-index').classList.remove('display-none');
+      document.querySelector('.hamburger-index').style.display="none";
+      document.querySelector('.cross').style.display="inline";
+    });
+};
+
+if(document.querySelector('.cross')) {
+    document.querySelector(".cross").addEventListener('click', function ()
+    {
+      document.querySelector('.hamburger-menu-index').classList.add('display-none');
+      document.querySelector('.hamburger-index').style.display="inline";
+      document.querySelector('.cross').style.display="none";
+    });
+};
+
 if(document.querySelector('.cross')) {
     document.querySelector(".cross").addEventListener('click', function ()
     {
@@ -232,3 +250,18 @@ if(document.querySelector('.propositionE')) {
       document.querySelector('.propositionE').style.display="none";
     });
 };
+
+// Price Slider
+
+let slider = document.getElementById("myRange");
+let output = document.getElementById("price");
+
+if(document.querySelector('.slidecontainer')) {
+  output.innerHTML = slider.value + "€" + " " + "et plus"; // valeur par défaut du slider
+}
+// mise à jour de la valeur du slider à chaque fois que le curseur est déplacé
+if(document.querySelector('.slidecontainer')) {
+  slider.oninput = function() {
+    output.innerHTML = this.value + "€" + " " + "et plus";
+  }
+}
