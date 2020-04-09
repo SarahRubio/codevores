@@ -116,6 +116,11 @@ body
 
 /****************** Color Font  */
 
+.green
+{
+	color: 											#5dd6ad;
+}
+
 .font-blue
 {
 	color: 										#000ff3;
@@ -397,15 +402,15 @@ body
 }
 
 
-	.marginb
-	{
-	  margin-bottom: 						3vh;
-	}
+.marginb
+{
+	margin-bottom: 						3vh;
+}
 
-	.marglr1
-	{
-		margin: 										0 1vw;
-	}
+.marglr1
+{
+	margin: 										0 1vw;
+}
 
 /**************** FONT  */
 
@@ -1558,12 +1563,6 @@ select
 .actujoin
 {
 	padding: 										0 5vw 5vh 5vw;
-}
-
-
-.green
-{
-	color: 											#5dd6ad;
 }
 
 .small
