@@ -319,6 +319,11 @@ body
 	padding: 										3vh 3vw;
 }
 
+.padfull5
+{
+		padding: 										5vh 5vw;
+}
+
 .padlr2
 {
 	padding-left: 							2vw;
@@ -754,7 +759,7 @@ nav li:hover:before {
 
 .whites
 {
-	background-color: 				#c6dfe6;
+	background-color: 				#86c1d2;
 	padding: 									0.2vh 0.5vw;
 	border-radius: 						10px;
 	display: 									inline-block;
