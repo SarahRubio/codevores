@@ -390,6 +390,17 @@ body
 	margin-top: 							3vh;
 }
 
+
+	.marginb
+	{
+	  margin-bottom: 						3vh;
+	}
+
+	.marglr1
+	{
+		margin: 										0 1vw;
+	}
+
 /**************** FONT  */
 
 .text-deco-none
@@ -1532,21 +1543,6 @@ select
 
 /*********************************ACTUALITES  */
 
-.titleactu
-{
-	display: 										flex;
-	flex-direction: 						column;
-	padding: 										0 5vw 4vh 5vw;
-}
-
-.titleactu h2
-{
-	margin: 										0 5vw;
-	padding: 										5vh 5vw 7vh 5vw;
-	font-size: 									2rem;
-	text-align: 								center;
-}
-
 .flexrow
 {
 	display: 										flex;
@@ -1655,19 +1651,12 @@ padding: 											0.3vh 0;
 
 .cartep
 {
-	border:											1px solid black;
+	border:											1px solid white;
 	padding: 										0vh 0vw 3vh 0vw;
 	margin-bottom: 							3vh;
 	width: 											302px;
 	border-radius: 							20px;
 }
-
-.marglr1
-{
-	margin: 										0 1vw;
-}
-
-
 
 .trombi
 {
@@ -1681,7 +1670,7 @@ padding: 											0.3vh 0;
 {
 	position: 									relative;
 	height:											314px;
-	border: 										solid 1px #000;
+	border: 										solid 1px #fff;
 	border-radius: 							20px;
 }
 
@@ -2248,10 +2237,6 @@ footer
 	font-size: 									1em;
 	}
 
-	.marginb
-	{
-	  margin-bottom: 						3vh;
-	}
 
 	.check-box input
 	{
