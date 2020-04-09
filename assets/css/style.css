@@ -294,6 +294,12 @@ body
 	padding: 										1vh 0vw;
 }
 
+.padtopbot7
+{
+	padding-top: 										7vh;
+	padding-bottom: 								7vh;
+}
+
 .padbot
 {
 	padding-bottom: 						4vh;
@@ -1541,11 +1547,6 @@ select
 	text-align: 								center;
 }
 
-.typeActu
-{
-	padding: 										7vh 1vw 7vh 1vw;
-}
-
 .flexrow
 {
 	display: 										flex;
@@ -1557,17 +1558,6 @@ select
 	padding: 										0 5vw 5vh 5vw;
 }
 
-.typeActu h4
-{
-	font-size: 									1.3rem;
-	text-align: 								center;
-}
-
-.typeActu a
-{
-	text-decoration: 						none;
-	color: 											black;
-}
 
 .green
 {
