@@ -29,7 +29,7 @@ if(document.querySelector('.jourbis')) {
 if(document.querySelector('.hamburger')) {
     document.querySelector(".hamburger").addEventListener('click', function ()
     {
-      document.querySelector('.hamburger-menu').classList.remove('hidden');
+      document.querySelector('.hamburger-menu').classList.remove('display-none');
       document.querySelector('.hamburger').style.display="none";
       document.querySelector('.cross').style.display="inline";
     });
@@ -56,7 +56,7 @@ if(document.querySelector('.cross')) {
 if(document.querySelector('.cross')) {
     document.querySelector(".cross").addEventListener('click', function ()
     {
-      document.querySelector('.hamburger-menu').classList.add('hidden');
+      document.querySelector('.hamburger-menu').classList.add('display-none');
       document.querySelector('.hamburger').style.display="inline";
       document.querySelector('.cross').style.display="none";
     });

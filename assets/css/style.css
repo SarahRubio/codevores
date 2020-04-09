@@ -57,23 +57,7 @@ table {
 
 .themeNuit
 {
-	background-color: 					#0c0c0c;
-	color: 											black;
-}
-
-.themeJour header
-{
-  background-image: 					url('../images/fur2.jpg');
-	background-attachment: 			fixed;
-  background-position: 				bottom;
-}
-
-.themeNuit header
-{
-	background:                 linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/fur2.jpg');
-	background-attachment: 			fixed;
-  background-position: 				bottom;
-	background-size: 						cover;
+	background:                 linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('../images/sky.jpg');
 }
 
 /********************************************************** CORPS *************************************/
@@ -94,6 +78,11 @@ body
 	background-size: cover;
 }
 
+.bgBlueSky
+{
+	background-color: 				#397d90;
+}
+
 .bgYellow
 {
 	background-color: 				#f3e50ea1;
@@ -105,6 +94,11 @@ body
 }
 
 .bgWhite
+{
+	background-color: 					#ffffffab;
+}
+
+.bgWhiteO
 {
 	background-color: 					#ffffffab;
 }
@@ -174,10 +168,9 @@ body
 	font-size: 									1.7em;
 }
 
-.fontm
+.font13
 {
 	font-size: 								1.3em;
-	font-weight: 							400;
 }
 
 .fontl
@@ -611,7 +604,8 @@ h1
 .hamburger-menu
 {
 	border: 										.1rem solid #E8E8E8;
-	padding: 										3vh 12vw;
+	z-index: 										1;
+	position: 									relative;
 }
 
 .close
@@ -1660,7 +1654,8 @@ padding: 											0.3vh 0;
 	padding: 										0vh 0vw 3vh 0vw;
 	margin-bottom: 							3vh;
 	width: 											302px;
-	border-radius: 							20px;
+	border-top-right-radius: 		20px;
+  border-top-left-radius: 		20px;
 }
 
 .trombi
