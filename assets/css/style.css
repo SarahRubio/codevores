@@ -200,6 +200,12 @@ body
 	border-radius:						20px;
 }
 
+.border-ra-25
+{
+	border-radius:						25px;
+}
+
+
 .border-red
 {
 	border: 										#f00 solid 2px;
@@ -295,7 +301,7 @@ body
 
 .padtopbot1
 {
-	padding: 										1vh 0vw;
+	padding: 										1vh 0.3vw;
 }
 
 .padtopbot7
@@ -317,6 +323,21 @@ body
 .padbot2
 {
 	padding-bottom: 						2vh;
+}
+
+.padbot3
+{
+	padding-bottom: 						3vh;
+}
+
+.padbot4
+{
+	padding-bottom: 						4vh;
+}
+
+.padbot5
+{
+	padding-bottom: 						5vh;
 }
 
 .padfull2
@@ -389,6 +410,12 @@ body
 	margin-top: 							14vh;
 }
 
+.margtop17
+{
+	margin-top: 							17vh;
+}
+
+
 .margtop3
 {
 	margin-top: 							3vh;
@@ -425,6 +452,11 @@ body
 .textl
 {
 	text-align: 							left;
+}
+
+.vAlignBottom
+{
+	vertical-align: 					text-bottom;
 }
 /******************* DISPLAY  */
 
@@ -504,6 +536,11 @@ header
 	border-radius: 						10px;
 }
 
+.searchbar:focus
+{
+	border: 									2px solid #ffed00;
+	outline: 									none;
+}
 
 
 
