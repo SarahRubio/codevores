@@ -88,6 +88,11 @@ body
 	background-color: 				#f3e50ea1;
 }
 
+.bgYellowStrong
+{
+	background-color: 				#fcee16cf;
+}
+
 .bgRed
 {
 	background-color: 				#f00;
@@ -159,7 +164,12 @@ body
 
 .font1.1
 {
-	font-size: 									1em;
+	font-size: 									1.1em;
+}
+
+.font1.2
+{
+	font-size: 									1.2em;
 }
 
 
@@ -536,9 +546,9 @@ header
 	border-radius: 						10px;
 }
 
-.searchbar:focus
+input:focus
 {
-	border: 									2px solid #ffed00;
+	border: 									3px solid #ffed00;
 	outline: 									none;
 }
 
