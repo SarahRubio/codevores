@@ -83,6 +83,11 @@ body
 	background-color: 				#397d90;
 }
 
+.bgGentleblue
+{
+	background-color: 				#8ccfffb3;
+}
+
 .bgYellow
 {
 	background-color: 				#f3e50ea1;
@@ -90,7 +95,7 @@ body
 
 .bgYellowStrong
 {
-	background-color: 				#fcee16cf;
+	background-color: 				#fcee16;
 }
 
 .bgRed
@@ -100,7 +105,7 @@ body
 
 .bgWhite
 {
-	background-color: 					#ffffffab;
+	background-color: 					#ffffff;
 }
 
 .bgWhiteO
@@ -242,6 +247,11 @@ body
 	border: 										#18a921 solid 2px;
 }
 
+.border-gentleblue
+{
+	border: 										1px #63b5ff solid;
+}
+
 .border-green
 {
 	border: 										#18a921 solid 2px;
@@ -311,7 +321,7 @@ body
 
 .padtopbot1
 {
-	padding: 										1vh 0.3vw;
+	padding: 										1vh 0.4vw;
 }
 
 .padtopbot7
@@ -355,6 +365,12 @@ body
 	padding: 										2vh 2vw;
 }
 
+.padtopbot2
+{
+	padding-top: 										2vh;
+	padding-bottom: 								2vh;
+}
+
 .padfull1
 {
 	padding: 										1vh 1vw;
@@ -385,6 +401,11 @@ body
 .margr2
 {
 	margin-right: 							2vw;
+}
+
+.margFull1
+{
+	margin: 							1vh 1vw;
 }
 
 .margtb
@@ -552,6 +573,14 @@ input:focus
 	outline: 									none;
 }
 
+.hamburger-menu ul li a:hover
+{
+	background-color: blue;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	width: 150px;
+}
 
 
 
@@ -1701,8 +1730,7 @@ padding: 											0.3vh 0;
 	padding: 										0vh 0vw 3vh 0vw;
 	margin-bottom: 							3vh;
 	width: 											302px;
-	border-top-right-radius: 		20px;
-  border-top-left-radius: 		20px;
+	background-color: 					white;
 }
 
 .trombi
@@ -1718,14 +1746,12 @@ padding: 											0.3vh 0;
 	position: 									relative;
 	height:											314px;
 	border: 										solid 1px #fff;
-	border-radius: 							20px;
 }
 
 .imgTrombi
 {
 	position: 									relative;
 	z-index: 										1;
-	border-radius: 							20px;
 }
 
 .starTrombi
