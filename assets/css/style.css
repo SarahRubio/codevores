@@ -319,6 +319,11 @@ body
 	padding-top: 								4vh;
 }
 
+.padtop15
+{
+	padding-top: 								15vh;
+}
+
 .padtopbot1
 {
 	padding: 										1vh 0.4vw;
@@ -461,6 +466,12 @@ body
 .marglr1
 {
 	margin: 										0 1vw;
+}
+
+.marglr15
+{
+	margin-right: 							15vw;
+	margin-left: 							15vw;
 }
 
 /**************** FONT  */
@@ -1665,7 +1676,7 @@ select
 	flex-direction: 						column;
 	justify-content: 						space-around;
 	align-items: 								center;
-	padding: 										1vh 5vw 5vh 5vw;
+	padding-bottom: 						5vh;
 }
 
 .actuJson ul
